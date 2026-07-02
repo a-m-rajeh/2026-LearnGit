@@ -1,0 +1,4 @@
+- git branch : to get an overview of all the branches you have in your current project.
+- git branch <new-branch-name> : to create a new branch.
+- git checkout <branch-name> : to switch between different branches.
+- git checkout -b <new-branch-name> : to create a new branch and switch to it immediately.
