@@ -1,1 +1,5 @@
 - git merge <branch-name> : to merge the specified branch into the current branch.
+- git switch <branch-name> : to switch to a branch (only for branches).
+- git switch -c <new-branch-name> : to create a new branch and switch to it immediately.
+
+note: git checkout is used to switch both commits & branches, while git switch is explicitly for branches.
