@@ -1,0 +1,6 @@
+* Deleteign Files
+
+- git ls-files : to list all the files that are currently in the staging area.
+- git rm <file-name> : to remove a file from the working directory and the staging area (to stage its deletion).
+- git add <deleted-file-name> : can also be used to stage the deletion of a file.
+
