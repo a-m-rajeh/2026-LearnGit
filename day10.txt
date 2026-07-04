@@ -1,0 +1,53 @@
+1. Basics & Repository Management
+
+* `git --version`: Check the installed Git version.
+* `git init`: Initialize an empty Git repository.
+* `git status`: Check the status of the working directory and staging area.
+* `git log`: Display the commit history of the current branch.
+* `git ls-files`: List files currently in the staging area.
+* `git add .`: Stage all changes (new and modified files).
+* `git commit -m "msg"`: Commit staged changes with a descriptive message.
+* `git help`: Display the manual or list of available commands.
+
+
+2. Branching & Navigation
+
+* `git branch <branch-name>`: Create a new branch (stays on the current branch).
+* `git checkout <branch-name>`: Switch to an existing branch.
+* `git checkout -b <branch-name>`: Create a new branch and switch to it immediately.
+* `git switch <branch-name>`: Switch to a specified branch (modern alternative to `checkout`).
+* `git switch -c <branch-name>`: Create and switch to a new branch (modern alternative).
+* `git merge <branch-name>`: Merge the specified branch into the current one.
+* `git branch -d <branch-name>`: Safely delete a branch (Git will prevent deletion if changes aren't merged).
+* `git branch -D <branch-name>`: Force delete a branch (regardless of merge status).
+
+
+
+3. Undoing Changes
+
+# Unstaged Changes (Working Directory)
+
+Used for changes that haven't been added to the staging area yet:
+
+* `git checkout -- .`: Discard changes in all tracked files in the working directory.
+* `git restore <file-name>`: Discard changes in a specific file (recommended modern approach).
+* `git clean -df`: Remove untracked files (`-f`) and directories (`-d`) from the working directory.
+
+# Staged Changes
+
+Used to unstage files (removing them from the staging area without losing your work):
+
+* `git reset <file-name>`: Unstage a specific file (traditional method).
+* `git restore --staged <file-name>`: Unstage a file (recommended modern approach).
+
+# Undoing the Latest Commit
+
+* `git reset HEAD~1`: Undo the last commit; keeps changes in the working directory (untracked).
+* `git reset --soft HEAD~1`: Undo the last commit; keeps changes in the staging area (ready to commit).
+* `git reset --hard HEAD~1`: Undo the last commit; **permanently discards** all changes in that commit.
+
+
+ 4. Deleting Files
+
+* `git rm <file-name>`: Remove the file from both the working directory and the staging area.
+* `git add <file-name>`: If you deleted a file manually from your file system, use this to stage the removal in Git.
