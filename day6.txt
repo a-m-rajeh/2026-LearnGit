@@ -1,3 +1,4 @@
 - git reset <file-name> : to unstage a modified file (the traditional way).
 - git restore --staged <file-name> : to unstage a modified file (the clearer, modern way).
-- then, apply git checkout <file-name>.
+- Note: After unstaging, use `git checkout <file-name>` (or `git restore <file-name>`) to discard the changes.
+  If it is a completely new/untracked file you want to delete, use `git clean -dn` (to preview) then `git clean -df` (to force delete).
