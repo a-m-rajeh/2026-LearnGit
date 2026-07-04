@@ -1,0 +1,4 @@
+* .gitignore file
+
+- ` *.txt ` : all files those ends with .txt 
+- ` !steps.txt ` : do not ignore this file. so, `!` means except.
