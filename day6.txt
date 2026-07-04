@@ -1,0 +1,3 @@
+- git reset <file-name> : to unstage a modified file (the traditional way).
+- git restore --staged <file-name> : to unstage a modified file (the clearer, modern way).
+- then, apply git checkout <file-name>.
