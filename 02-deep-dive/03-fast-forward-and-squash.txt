@@ -1,0 +1,7 @@
+- git merge <branch-name> : to merge the commits from the specified branch into your current branch.
+
+- git merge --squash <branch-name> : to combine all commits from the specified branch into a single uncommitted
+  change in your staging area, ready to be saved as one new commit.
+
+ - Note: A "fast-forward" merge occurs automatically when there are no new commits on the current branch since
+   the specified branch was created. In this case, Git simply moves the pointer forward to the latest commit without creating a new merge commit.
