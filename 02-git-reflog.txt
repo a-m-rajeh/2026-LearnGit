@@ -1,0 +1,3 @@
+* git log : to display the chronological commit history of your current branch, including commit hashes, author details, dates, and messages.
+
+* git reflog : to display a local, hidden record of all movements and actions in your repository (like resets, checkouts, and deleted commits), acting as a safety net to recover lost work.
