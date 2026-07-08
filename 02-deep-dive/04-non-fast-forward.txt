@@ -1,0 +1,3 @@
+- git merge --no-ff <branch-name> : Forces Git to create a new merge commit even if a fast-forward merge is possible.
+  This is highly useful for keeping all commits related to a specific feature grouped together 
+  and maintaining a clear historical context of when the branch existed.
